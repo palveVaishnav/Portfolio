@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import IconCloudDemo from "@/components/IconCloud";
 import { SkillGrid } from "./Skills";
-import { Input } from "@/components/ui/input";
+
+import Contact from "./Contact";
 
 export default function Home() {
     return (
@@ -23,8 +24,7 @@ export default function Home() {
 function Lander() {
     return <>
         <div className="grid">
-
-            {/* Landing Area */}
+            {/* Hero Area */}
             <div className="h-[70vh] p-5 flex flex-col justify-center gap-1">
                 <div className=" h-3/4 grid content-center pl-1 md:pl-[10rem] lg:pl-[15rem]">
                     <div className="text-3xl">
@@ -61,7 +61,7 @@ function Lander() {
 
             {/* Tech Stack  */}
 
-            <div className="grid place-content-center md:p-5">
+            <div className="md:px-10 lg:px-[12rem] grid place-content-center">
                 <div className="flex justify-between p-4">
                     <div className=" py-1 px-2 rounded-md text-lg primaryColorText font-serif md:text-xl lg:text-2xl">
                         Skills
@@ -87,12 +87,17 @@ function Lander() {
             </div>
 
             <ComponentEnd />
-            
+
             {/* Contact */}
-            <div className="grid place-content-center">
-                <div>
-                    <Input />
-                </div>
+            
+            <div className="md:px-10 lg:px-[12rem] grid place-content-center">  
+                <Contact />
+            </div>
+
+            {/* footer */}
+
+            <div className="devBorderRed">
+                footer
             </div>
 
         </div>

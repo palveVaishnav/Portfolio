@@ -34,7 +34,7 @@ export const HoverCardDemo: React.FC<SkillProps> = ({ skill }) => {
                 </Button>
             </HoverCardTrigger>
 
-            <HoverCardContent className="w-60 bg-[#333] text-white rounded-lg shadow-xl">
+            <HoverCardContent className="w-60 rounded-lg shadow-xl">
                 <div className="flex justify-between space-x-4">
                     <div className="bg-whit">
                         <RenderedIcon iconSlug={skill.name.toLowerCase()} />

@@ -21,6 +21,9 @@
     .primaryColor{
         @apply bg-amber-600
     }
+    .secondaryColor{
+        @apply bg-zinc-100
+    }
     .cardBackground{
         @apply bg-red-500
     }

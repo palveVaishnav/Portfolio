@@ -167,7 +167,7 @@ export function SocialBar() {
             </DockIcon>
 
           ))}
-          <Separator orientation="vertical" className="h-full py-2 hidden" />          
+          {/* <Separator orientation="vertical" className="h-full py-2 hidden" />           */}
         </Dock>
       </TooltipProvider>
     </div>
