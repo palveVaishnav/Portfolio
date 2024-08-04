@@ -19,12 +19,12 @@ export default function Contact() {
                             Happy to hear your ideas!!
                         </p>
                         <div className="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+                            <MapPin strokeWidth={.5}/>
                             <p>Pune,Maharashtra <br />India </p>
 
                         </div>
                         <a className="flex items-center space-x-2 hover:font-medium" href="mailto:palvevaishnav09@gmail.com">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-plus"><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/><path d="M19 16v6"/><path d="M16 19h6"/></svg>
+                            <MailIcon strokeWidth={.5}/>
                             <p className="md:text-lg">palvevaishnav09@gmail.com</p>
                         </a>
                     </div>

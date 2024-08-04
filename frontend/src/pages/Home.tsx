@@ -97,7 +97,7 @@ function Lander() {
             {/* footer */}
 
             <div className="devBorderRed">
-                footer
+                {/* <footer> */}
             </div>
 
         </div>
