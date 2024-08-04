@@ -2,7 +2,12 @@
 // import { title } from "process";
 import { GlareCard } from "./ui/glare-card";
 
-export function GlareCardDemo({ title }) {
+interface TitleProps {
+    title:string
+}
+
+export const GlareCardDemo: React.FC<TitleProps> = ({ title }) => {
+// export function GlareCardDemo({ title }):React.FC<titleProps>{
     return (
         <div className="grid grid-cols-3 md:grid-cols-4">          
             <GlareCard className="flex flex-col items-start justify-end py-8 px-6 max-h-4 overflow-hidden">

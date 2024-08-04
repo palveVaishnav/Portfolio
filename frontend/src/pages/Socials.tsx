@@ -1,4 +1,4 @@
-export default function Socials(): JSX.Element {
+export default function Socials(){
   return (
     <>
       From Socials

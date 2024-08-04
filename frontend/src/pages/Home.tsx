@@ -1,7 +1,7 @@
 
 import { BoxRevealDemo } from "@/components/TextRevail";
 import { SocialBar } from "@/components/Socials";
-import { BentoGridDemo, BentoGridMobile } from "@/components/ProjectsGrid";
+import { BentoGridMobile } from "@/components/ProjectsGrid";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";

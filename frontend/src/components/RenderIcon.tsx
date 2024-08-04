@@ -23,7 +23,7 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
             href: undefined,
             target: undefined,
             rel: undefined,
-            onClick: (e: any) => e.preventDefault(),
+            onClick: (e) => e.preventDefault(),
         },
     });
 };
@@ -36,10 +36,10 @@ type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>;
 
 export default function RenderedIcon({ iconSlug }: DynamicIconProps) : JSX.Element {
 
-    const [data, setData] = useState<IconData | null>(null);
+    const [, setData] = useState<IconData | null>(null);
     const [icon, setIcon] = useState<SimpleIcon | null>(null);
     const { theme } = useTheme();
-
+    // console.log(data)
     useEffect(() => {
         fetchSimpleIcons({ slugs: [iconSlug] }).then((fetchedData) => {
             setData(fetchedData);

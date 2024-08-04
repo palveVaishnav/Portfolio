@@ -1,5 +1,5 @@
 import { HoverCardDemo } from "@/components/HoverCard";
-import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
+// import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 export default function Skills() {
     return (
         <>
@@ -33,14 +33,20 @@ export function SkillGrid() {
         { name: "Java", des: "Object-oriented language for building cross-platform applications." },
     ];
 
-    const slugs = skillList.map(skill => skill.name.toLowerCase());
+    // const slugs = skillList.map(skill => skill.name.toLowerCase());
+    // interface SkillProps {
+    //     skill: {
+    //         name: string;
+    //         des: string;
+    //     };
+    // }
 
     const cards = skillList.map((skill, index) => (
-            <div>
-                <div key={index} className="p-2 border rounded-lg hover:shadow-md">
-                    <HoverCardDemo skill={skill} />
-                </div>
+        <div>
+            <div key={index} className="p-2 border rounded-lg hover:shadow-md">
+                <HoverCardDemo skill={skill} />
             </div>
+        </div>
     ));
 
     return (

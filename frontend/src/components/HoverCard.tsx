@@ -8,18 +8,25 @@ import {
 import RenderedIcon from "./RenderIcon"
 // import { title } from "process"
 
-type importSkill = {
-    name: string,
-    des: string,
-    // svg:string,
-};
+// type importSkill = {
+//     name: string,
+//     des: string,
+//     // svg:string,
+// };
 
-export function HoverCardDemo({ skill }: importSkill) {
+interface SkillProps {
+    skill: {
+        name: string;
+        des: string;
+    };
+}
+
+export const HoverCardDemo: React.FC<SkillProps> = ({ skill }) => {
     return (
         <HoverCard>
             <HoverCardTrigger asChild className="grid place-content-center gap-1 w-full ">
                 <Button variant="link" className="overflow-hidden ">
-                    <div className="flex justify-center gap-2 overflow-hidden">                    
+                    <div className="flex justify-center gap-2 overflow-hidden">
                         <div className="hidden sm:flex justify-between space-x-4">
                             {skill.name}
                         </div>

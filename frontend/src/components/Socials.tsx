@@ -13,7 +13,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import { ModeToggle } from "@/components/mode-toggle";
+// import { ModeToggle } from "@/components/mode-toggle";
 // import { Link } from "react-router-dom";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
@@ -62,7 +62,7 @@ const Icons = {
   ),
 
   instagram: (props: IconProps) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram" {...props}>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-instagram" {...props}>
       <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
       <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
@@ -167,17 +167,7 @@ export function SocialBar() {
             </DockIcon>
 
           ))}
-          <Separator orientation="vertical" className="h-full py-2 hidden" />
-          <DockIcon className="hidden">
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <ModeToggle className="rounded-full" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Theme</p>
-              </TooltipContent>
-            </Tooltip>
-          </DockIcon>
+          <Separator orientation="vertical" className="h-full py-2 hidden" />          
         </Dock>
       </TooltipProvider>
     </div>
