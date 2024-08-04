@@ -35,8 +35,8 @@ import Socials from '../pages/Socials'
 
 export default function NavBar() {
     return (
-        <div className='sticky w-full top-0 left-0 right-0 z-10 bg-slate-200 dark:bg-inherit dark:shadow-white backdrop-blur-lg'>
-            <div className='p-2 flex flex-row justify-between items-centercontent-center shadow-xl min-w-full relative top-0'>
+        <div className='sticky w-full top-0 left-0 right-0 z-10 dark:shadow-white backdrop-blur-lg rounded-lg'>
+            <div className='p-2 flex flex-row justify-between items-centercontent-center shadow-md min-w-full relative top-0'>
                 <div className='flex items-center justify-start'>
                     <ToggleMenu />
                     <WebLogo />
@@ -106,9 +106,11 @@ function ToggleMenuPages(){
 function WebLogo() {
     return (
         <>
-            <p className='font-serif text-xl'>
-                <span>palve</span>Vaishnav
-            </p>
+            <Link to="/">
+                <p className='font-serif text-xl'>
+                    <span>palve</span>Vaishnav
+                </p>
+            </Link>
         </>
     )
 }
