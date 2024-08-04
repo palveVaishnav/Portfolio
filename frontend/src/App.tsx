@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className='m-2'>
+    <div className='m-2  dark:bg-[#333]'>
       <Routing />
     </div>
   )

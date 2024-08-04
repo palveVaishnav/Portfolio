@@ -18,4 +18,10 @@
     .primaryColorText{
         @apply text-amber-700
     }
+    .primaryColor{
+        @apply bg-amber-600
+    }
+    .cardBackground{
+        @apply bg-red-500
+    }
 }

@@ -27,6 +27,7 @@ import NoPage from '../pages/NoPage'
 import Projects from '../pages/Project'
 import Services from '../pages/Services'
 import Socials from '../pages/Socials'
+import Skills from "@/pages/Skills";
 
 
 
@@ -86,6 +87,7 @@ function ToggleMenuPages(){
             "Ideas",
             "Services",
             "Socials",
+            "SKills"
     ];  
     return (
         <>
@@ -129,6 +131,7 @@ export function Routing() {
                         <Route path='contact' element={<Contact />}></Route>
                         <Route path='services' element={<Services />}></Route>
                         <Route path='ideas' element={<Ideas />}></Route>
+                        <Route path='skills' element={<Skills />}></Route>
                         <Route path='*' element={<NoPage />}></Route>
                     </Route>
                 </Routes>
