@@ -1,7 +1,7 @@
-export default function Socials(){
+export default function Socials() {
   return (
-    <>
-      From Socials
-    </>
+    <div className="h-screen w-screen grid place-content-center">
+      Under Development
+    </div>
   )
 }
