@@ -1,7 +1,7 @@
 export default function About():JSX.Element{
     return(
-        <>
-            From About
-        </>
+        <div className="h-screen w-screen grid place-content-center">
+            Under Development
+        </div>
     )
 }

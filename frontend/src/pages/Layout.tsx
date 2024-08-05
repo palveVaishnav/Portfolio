@@ -4,13 +4,11 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <>
-      <div className='m-2'>
-        <NavBar />
-        <Outlet />
-      </div>
-    </>
-  )
+    <div>
+      <NavBar />
+      <Outlet />
+    </div>
+  );
 };
 
 export default Layout;

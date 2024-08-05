@@ -1,7 +1,7 @@
 export default function Services():JSX.Element{
     return (
-        <div>
-            From Services
+        <div className="h-screen w-screen grid place-content-center">
+            Under Development
         </div>
     );
 }

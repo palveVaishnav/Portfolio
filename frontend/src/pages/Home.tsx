@@ -9,6 +9,7 @@ import IconCloudDemo from "@/components/IconCloud";
 import { SkillGrid } from "./Skills";
 
 import Contact from "./Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
     return (
@@ -96,8 +97,8 @@ function Lander() {
 
             {/* footer */}
 
-            <div className="devBorderRed">
-                {/* <footer> */}
+            <div className="-mx-2">
+                <Footer />
             </div>
 
         </div>

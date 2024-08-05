@@ -27,7 +27,7 @@ export const HoverCardDemo: React.FC<SkillProps> = ({ skill }) => {
             <HoverCardTrigger asChild className="grid place-content-center gap-1 w-full ">
                 <Button variant="link" className="overflow-hidden ">
                     <div className="flex justify-center gap-2 overflow-hidden">
-                        <div className="hidden sm:flex justify-between space-x-4">
+                        <div className="block sm:flex justify-between space-x-4">
                             {skill.name}
                         </div>
                     </div>

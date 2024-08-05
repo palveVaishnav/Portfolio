@@ -6,7 +6,7 @@ import { MailIcon, MapPin } from "lucide-react";
 
 export default function Contact() {
     return (<>
-        <div className="h-screen grid lg:flex rounded-xl secondaryColor overflow-hidden md:m-10 ">
+        <div className="h-screen grid lg:flex rounded-xl secondaryColor overflow-hidden md:m-10 border">
             <div className="p-5 w-full grid content-center gap-6 bg-zinc-300">
 
                 <div className="grid w-full h-full p-2 gap-3">

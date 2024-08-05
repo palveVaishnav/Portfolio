@@ -28,6 +28,7 @@ import Projects from '../pages/Project'
 import Services from '../pages/Services'
 import Socials from '../pages/Socials'
 import Skills from "@/pages/Skills";
+import { pages } from "@/utils/pageList";
 
 
 
@@ -79,16 +80,7 @@ export function ToggleMenu() {
 }
 
 function ToggleMenuPages(){
-    const pages = [ 
-            "Home",
-            "About",
-            "Contact",
-            "Projects",
-            "Ideas",
-            "Services",
-            "Socials",
-            "SKills"
-    ];  
+    // const pages:[] = pages;
     return (
         <>
         {pages.map((page, index) => (
