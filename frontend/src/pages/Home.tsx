@@ -6,10 +6,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import IconCloudDemo from "@/components/IconCloud";
-import { SkillGrid } from "./Skills";
-
+import { RenderSkills} from "./Skills";
 import Contact from "./Contact";
-import Footer from "@/components/Footer";
 
 export default function Home() {
     return (
@@ -77,7 +75,8 @@ function Lander() {
                 </div>
                 <div className="grid md:flex md:m-2">
                     <div className="hidden sm:grid sm:grid-cols-3 md:grid-cols-4 place-content-center overflow-hidden gap-2">
-                        <SkillGrid />
+                        {/* <SkillGrid /> */}
+                        <RenderSkills />
                     </div>
                     <div className="z-10">
                         <div>
@@ -96,11 +95,6 @@ function Lander() {
             </div>
 
             {/* footer */}
-
-            <div className="-mx-2">
-                <Footer />
-            </div>
-
         </div>
     </>
 }
