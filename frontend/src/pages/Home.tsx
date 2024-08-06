@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import IconCloudDemo from "@/components/IconCloud";
 import { RenderSkills} from "./Skills";
-import Contact from "./Contact";
+// import Contact from "./Contact";
 
 export default function Home() {
     return (
@@ -92,9 +92,22 @@ function Lander() {
             {/* Contact */}
             
             <div className="md:px-10 lg:px-[12rem] grid place-content-center">  
-                <Contact />
+                <div className="flex justify-between items-end p-4">
+                    <div className=" py-1 px-2 rounded-md text-lg primaryColorText font-serif md:text-xl lg:text-2xl">
+                        Get in Touch
+                    </div>
+                    <div className=" py-1 px-2 text-sm">
+                        <Link to="/contact" >
+                            <Button >
+                                Contact {">>"}
+                            </Button>
+                        </Link>
+                    </div>
+                </div>
+                {/* <Contact /> */}
             </div>
 
+            <ComponentEnd />
             {/* footer */}
         </div>
     </>
