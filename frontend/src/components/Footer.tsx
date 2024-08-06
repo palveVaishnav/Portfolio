@@ -5,7 +5,7 @@ import { DATA } from "@/utils/SocialList"
 export default function Footer() {
 
     return (
-        <div className="grid ternaryColor md:grid-cols-2 lg:grid-cols-3 p-4 rounded-t-xl">
+        <div className="grid ternaryColor md:grid-cols-2 lg:grid-cols-3 p-4 rounded-t-xl dark:bg-inherit dark:border-white">
             <div className="grid p-4">
                 <p className="text-sm">All rights reserved</p>
                 <a href="/home">
