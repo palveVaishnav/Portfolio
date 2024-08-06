@@ -32,8 +32,8 @@ export default function Skills() {
     return (
         <div className="m-4 grid place-content-center gap-4">
             <Select onValueChange={(value) => setSelectedDomain(value)}>
-                <SelectTrigger className="w-[180px] shadow-lg border">
-                    <SelectValue placeholder="All" className="" />
+                <SelectTrigger className="w-[180px] shadow-lg border font-semibold">
+                    <SelectValue placeholder="All" className="font-bold" />
                 </SelectTrigger>
                 <SelectContent>
                     <SelectGroup>
@@ -51,13 +51,11 @@ export default function Skills() {
                     </SelectGroup>
                 </SelectContent>
             </Select>
-            {/* <div className="m-4 grid place-content-center"> */}
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  place-content-center">
-                        <DomainContext.Provider value={selectedDomain}>
-                            <RenderSkills />
-                        </DomainContext.Provider>
-                    </div>
-            {/* </div> */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  place-content-center">
+                <DomainContext.Provider value={selectedDomain}>
+                    <RenderSkills />
+                </DomainContext.Provider>
+            </div>
         </div>
     )
 }

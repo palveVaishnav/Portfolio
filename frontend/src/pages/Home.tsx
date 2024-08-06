@@ -77,6 +77,7 @@ function Lander() {
                     <div className="hidden sm:grid sm:grid-cols-3 md:grid-cols-4 place-content-center overflow-hidden gap-2">
                         {/* <SkillGrid /> */}
                         <RenderSkills />
+                        {/* <Skills /> */}
                     </div>
                     <div className="z-10">
                         <div>

@@ -80,7 +80,6 @@ export function ToggleMenu() {
 }
 
 function ToggleMenuPages(){
-    // const pages:[] = pages;
     return (
         <>
         {pages.map((page, index) => (

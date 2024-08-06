@@ -83,7 +83,13 @@ export const skillList:Skill[] = [
         name: "MongoDB",
         des: "NoSQL database for flexible, document-oriented data storage.",
         svg: <IconDatabase stroke={1} />,
-        type:["backend","database"],
+        type:["database"],
+    },
+    {
+        name: "Mongoose",
+        des: "NoSQL database for flexible, document-oriented data storage.",
+        svg: <IconDatabase stroke={1} />,
+        type:["backend"],
     },
     {
         name: "Next",
@@ -95,7 +101,7 @@ export const skillList:Skill[] = [
         name: "PostgreSQL",
         des: "Advanced open-source relational database management system.",
         svg: <IconBrandPostgresql stroke={1} />,
-        type:["backend","database"],
+        type:["database"],
     },
     {
         name: "Prisma",
@@ -107,7 +113,7 @@ export const skillList:Skill[] = [
         name: "SQL",
         des: "Language for managing and querying relational databases.",
         svg: <IconDatabase stroke={1} />,
-        type:["backend","database","programming"],
+        type:["backend","database"],
     },
     {
         name: "Shadcn/UI",
@@ -137,7 +143,7 @@ export const skillList:Skill[] = [
         name: "Cloudflare",
         des: "Service that enhances security and performance for websites.",
         svg: <IconBrandCloudflare stroke={1} />,
-        type:["tools","devops"],
+        type:["tools","devops","deployment"],
     },
     {
         name: "Python",

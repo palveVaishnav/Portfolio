@@ -1,10 +1,10 @@
 export const pages = [
     "Home",
-    "About",
-    "Contact",
+    "Skills",
     "Projects",
-    "Ideas",
-    "Services",
-    "Socials",
-    "SKills"
+    "Contact",
+    // "About",
+    // "Ideas",
+    // "Services",
+    // "Socials",
 ];
