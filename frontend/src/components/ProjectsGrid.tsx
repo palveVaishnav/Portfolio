@@ -72,7 +72,7 @@ const items = [
     title: "Roomer",
     repo: "https://github.com/palveVaishnav/roomer",
     url: "",
-    description: "A Age finding website.",
+    description: "A Web for searching flats and rooms (Rental)",
     header: <Skeleton />,
     icon: <IconHome className="h-4 w-4 text-neutral-500" />,
   },
