@@ -1,13 +1,10 @@
-
-import { BoxRevealDemo } from "@/components/TextRevail";
 import { SocialBar } from "@/components/Socials";
 import { BentoGridMobile } from "@/components/ProjectsGrid";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import IconCloudDemo from "@/components/IconCloud";
-import { RenderSkills} from "./Skills";
-// import Contact from "./Contact";
+import { TextChanger } from "@/components/AnimatedTyping";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
     return (
@@ -22,15 +19,19 @@ export default function Home() {
 
 function Lander() {
     return <>
-        <div className="grid">
+        <div className="grid relative">
             {/* Hero Area */}
-            <div className="h-[70vh] p-5 flex flex-col justify-center gap-1">
-                <div className=" h-3/4 grid content-center pl-1 md:pl-[10rem] lg:pl-[15rem]">
+            <div className="absolute top-1 right-1">
+                <ModeToggle />
+            </div>
+            <div className="h-[] p-5 flex flex-col justify-center gap-1">
+                <div className=" h-3/4 grid place-content-center">
                     <div className="text-3xl">
-                        <BoxRevealDemo />
+                        {"Vaishnav Palve"}
+                        <TextChanger />
                     </div>
                 </div>
-                <div className="flex justify-center h-1/4 ">
+                <div className="flex justify-center h-1/4">
                     <SocialBar />
                 </div>
             </div>
@@ -39,76 +40,24 @@ function Lander() {
 
             {/* Projects  */}
             <div className="grid place-content-center">
-                <div className="flex justify-between p-4">
-                    <div className=" py-1 px-2 rounded-md text-lg primaryColorText font-serif md:text-xl lg:text-2xl">
+                <div className="flex justify-between items-center p-4">
+                    <div className="text-lg primaryColorText font-serif md:text-xl lg:text-2xl">
                         My Projects
-                    </div>
-                    <div className=" py-1 px-2 text-sm">
-                        <Link to="/Projects" >
-                            <Button >
-                                View All {">>"}
-                            </Button>
-                        </Link>
-                    </div>
-                </div>
-                <div>
-                    <BentoGridMobile />
-                </div>
-            </div>
-
-            <ComponentEnd />
-
-            {/* Tech Stack  */}
-
-            <div className="md:px-10 lg:px-[12rem] grid place-content-center">
-                <div className="flex justify-between p-4">
-                    <div className=" py-1 px-2 rounded-md text-lg primaryColorText font-serif md:text-xl lg:text-2xl">
-                        Skills
                     </div>
                     <div className=" py-1 px-2 text-sm">
                         <Link to="/skills" >
                             <Button >
-                                View All {">>"}
+                                View Skills {">>"}
                             </Button>
                         </Link>
                     </div>
                 </div>
-                <div className="grid md:flex md:m-2">
-                    <div className="hidden sm:grid sm:grid-cols-3 md:grid-cols-4 place-content-center overflow-hidden gap-2">
-                        {/* <SkillGrid /> */}
-                        <RenderSkills />
-                        {/* <Skills /> */}
-                    </div>
-                    <div className="z-10">
-                        <div>
-                            <IconCloudDemo />
-                        </div>
-                    </div>
+                {/* Project Cards */}
+                <div>
+                    <BentoGridMobile />
                 </div>
             </div>
-
             <ComponentEnd />
-
-            {/* Contact */}
-            
-            <div className="md:px-10 lg:px-[12rem] grid place-content-center">  
-                <div className="flex justify-between items-end p-4">
-                    <div className=" py-1 px-2 rounded-md text-lg primaryColorText font-serif md:text-xl lg:text-2xl">
-                        Get in Touch
-                    </div>
-                    <div className=" py-1 px-2 text-sm">
-                        <Link to="/contact" >
-                            <Button >
-                                Contact {">>"}
-                            </Button>
-                        </Link>
-                    </div>
-                </div>
-                {/* <Contact /> */}
-            </div>
-
-            <ComponentEnd />
-            {/* footer */}
         </div>
     </>
 }

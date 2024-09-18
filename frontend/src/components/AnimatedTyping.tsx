@@ -1,8 +1,12 @@
 import TypingAnimation from "@/components/magicui/typing-animation";
 import { useEffect, useState } from "react";
+import { skillList } from '../utils/SkillList';
 
 export function TextChanger() {
-    const changingTag = ["Challenge..","Idea..", "Problem..", "Solution..",  "Project..", "Journey.."];
+    const changingTag: string[] = [];
+    skillList.map((skill) => {
+        changingTag.push(skill.name)
+    })
     const [currentTagIndex, setCurrentTagIndex] = useState(0);
 
     useEffect(() => {
@@ -20,7 +24,7 @@ export function TextChanger() {
     return (
         <TypingAnimation
             key={currentTagIndex}
-            className="text-4xl sm:text-5xl md:text-6xl my-1 sm:my-2 md:my-3 font-bold primaryColorText dark:primaryColorText"
+            className="text-xl opacity-30 primaryColorText dark:primaryColorText"
             text={changingTag[currentTagIndex]}
         />
     )

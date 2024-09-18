@@ -33,9 +33,7 @@ export function BentoGridMobile() {
     <BentoGrid className="max-w-4xl mx-auto">
       {items.map((item, i) => (
         <div
-          key={i}
-          className={i > 2 ? "hidden " : ""}
-        >
+          key={i}>
           <BentoGridItem
 
             title={item.title}
@@ -46,9 +44,6 @@ export function BentoGridMobile() {
             url={item.url}
             className="h-full w-full"
           />
-          <div>
-
-          </div>
         </div>
       ))}
     </BentoGrid>
@@ -69,14 +64,6 @@ const items = [
     icon: <IconHeartbeat className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Roomer",
-    repo: "https://github.com/palveVaishnav/roomer",
-    url: "",
-    description: "A Web for searching flats and rooms (Rental)",
-    header: <Skeleton />,
-    icon: <IconHome className="h-4 w-4 text-neutral-500" />,
-  },
-  {
     title: "NoteHub",
     repo: "https://github.com/palveVaishnav/notehub",
     url: "https://note-hub-one.vercel.app/",
@@ -85,12 +72,36 @@ const items = [
     icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Portfolio",
-    repo: "https://github.com/palveVaishnav/portfolio",
-    url: "https://palvevaishnav.vercel.app/",
-    description: "A professional portfolio website.",
+    title: "Varhad",
+    repo: "https://github.com/palveVaishnav/varhad",
+    url: "https://varhad.vercel.app/",
+    description: "A Website for a loacl company.",
+    header: <Skeleton />,
+    icon: <IconDeviceGamepad2 className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "DLost",
+    repo: "https://github.com/palveVaishnav/dlost",
+    url: "https://dlost.vercel.app/",
+    description: "A Route Sharing Platform",
     header: <Skeleton />,
     icon: <IconUserStar className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "BView",
+    repo: "https://github.com/palveVaishnav/bview",
+    url: "",
+    description: "A Chrome extension for better bookmark view.",
+    header: <Skeleton />,
+    icon: <IconUserStar className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Roomer",
+    repo: "https://github.com/palveVaishnav/roomer",
+    url: "",
+    description: "A Web for searching flats and rooms (Rental)",
+    header: <Skeleton />,
+    icon: <IconHome className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Sudoku",
@@ -99,5 +110,13 @@ const items = [
     description: "A simple Sudoku game.",
     header: <Skeleton />,
     icon: <IconDeviceGamepad2 className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Portfolio",
+    repo: "https://github.com/palveVaishnav/portfolio",
+    url: "https://palvevaishnav.vercel.app/",
+    description: "The One you are currently on.",
+    header: <Skeleton />,
+    icon: <IconUserStar className="h-4 w-4 text-neutral-500" />,
   },
 ];

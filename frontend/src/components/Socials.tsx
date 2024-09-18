@@ -15,30 +15,9 @@ import { DATA } from "@/utils/SocialList";
 
 export function SocialBar() {
   return (
-    <div className="relative flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center h-fit overflow-hidden">
       <TooltipProvider >
         <Dock direction="middle" className="shadow-md rounded-lg">
-          {/* {DATA.navbar.map((item) => (
-            <DockIcon key={item.label}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    href={item.href}
-                    className={cn(
-                      buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
-                    )}
-                  >
-                    <item.icon className="size-4" />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{item.label}</p>
-                </TooltipContent>
-              </Tooltip>
-            </DockIcon>
-          ))}
-          <Separator orientation="vertical" className="h-full" /> */}
           {Object.entries(DATA.contact.social).map(([name, social]) => (
             <DockIcon key={name}>
               <Tooltip>
@@ -58,7 +37,7 @@ export function SocialBar() {
                   <p>{name}</p>
                 </TooltipContent>
               </Tooltip>
-              { name==="Email" && <Separator orientation="vertical" className="h-full py-2 bg-black dark:bg-white" />}
+              {name === "Email" && <Separator orientation="vertical" className="h-full py-2 bg-black dark:bg-white" />}
             </DockIcon>
 
           ))}
