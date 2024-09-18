@@ -72,20 +72,20 @@ const items = [
     icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Varhad",
-    repo: "https://github.com/palveVaishnav/varhad",
-    url: "https://varhad.vercel.app/",
-    description: "A Website for a loacl company.",
-    header: <Skeleton />,
-    icon: <IconDeviceGamepad2 className="h-4 w-4 text-neutral-500" />,
-  },
-  {
     title: "DLost",
     repo: "https://github.com/palveVaishnav/dlost",
     url: "https://dlost.vercel.app/",
     description: "A Route Sharing Platform",
     header: <Skeleton />,
     icon: <IconUserStar className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Varhad",
+    repo: "https://github.com/palveVaishnav/varhad",
+    url: "https://varhad.vercel.app/",
+    description: "A Website for a loacl company.",
+    header: <Skeleton />,
+    icon: <IconDeviceGamepad2 className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "BView",
