@@ -25,7 +25,6 @@ import Ideas from '../pages/Ideas'
 import Layout from "../pages/Layout"
 import NoPage from '../pages/NoPage'
 import Projects from '../pages/Project'
-import Services from '../pages/Services'
 import Socials from '../pages/Socials'
 import Skills from "@/pages/Skills";
 import { pages } from "@/utils/pageList";
@@ -54,7 +53,7 @@ export default function NavBar() {
 
 export function ToggleMenu() {
     const side = "left";
-    
+
     return (
         <div className="grid grid-cols-2 gap-2">
             <Sheet>
@@ -70,8 +69,8 @@ export function ToggleMenu() {
                             Navigation Menu
                         </SheetDescription>
                     </SheetHeader>
-                    <div className="grid gap-4 py-4">   
-                        <ToggleMenuPages />                     
+                    <div className="grid gap-4 py-4">
+                        <ToggleMenuPages />
                     </div>
                 </SheetContent>
             </Sheet>
@@ -79,18 +78,18 @@ export function ToggleMenu() {
     )
 }
 
-function ToggleMenuPages(){
+function ToggleMenuPages() {
     return (
         <>
-        {pages.map((page, index) => (
-            <SheetClose key={index} asChild>
-                <Link to={page}>
-                    <Toggle variant="outline" aria-label="Toggle" className="w-full">
-                        {page}
-                    </Toggle>
-                </Link>
-            </SheetClose>
-        ))}
+            {pages.map((page, index) => (
+                <SheetClose key={index} asChild>
+                    <Link to={page}>
+                        <Toggle variant="outline" aria-label="Toggle" className="w-full">
+                            {page}
+                        </Toggle>
+                    </Link>
+                </SheetClose>
+            ))}
         </>
     )
 }

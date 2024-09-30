@@ -55,6 +55,23 @@ const Skeleton = () => (
   </div>
 );
 const items = [
+
+  {
+    title: "Storm (FE)",
+    repo: "https://github.com/palveVaishnav/storm",
+    url: "https://storm-seven.vercel.app/",
+    description: "Web animation using framer.",
+    header: <Skeleton />,
+    icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "NoteHub",
+    repo: "https://github.com/palveVaishnav/notehub",
+    url: "https://note-hub-one.vercel.app/",
+    description: "Notes Sharing Platform for Students.",
+    header: <Skeleton />,
+    icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
+  },
   {
     title: "ArogyArpan",
     repo: "https://github.com/palveVaishnav/arogyarpan",
@@ -80,20 +97,20 @@ const items = [
     icon: <IconUserStar className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Varhad",
-    repo: "https://github.com/palveVaishnav/varhad",
-    url: "https://varhad.vercel.app/",
-    description: "A Website for a loacl company.",
-    header: <Skeleton />,
-    icon: <IconDeviceGamepad2 className="h-4 w-4 text-neutral-500" />,
-  },
-  {
     title: "BView",
     repo: "https://github.com/palveVaishnav/bview",
     url: "",
     description: "A Chrome extension for better bookmark view.",
     header: <Skeleton />,
     icon: <IconUserStar className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Varhad",
+    repo: "https://github.com/palveVaishnav/varhad",
+    url: "https://varhad.vercel.app/",
+    description: "A Website for a loacl company.",
+    header: <Skeleton />,
+    icon: <IconDeviceGamepad2 className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Roomer",
