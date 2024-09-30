@@ -24,7 +24,7 @@ export function TextChanger() {
     return (
         <TypingAnimation
             key={currentTagIndex}
-            className="text-xl opacity-30 primaryColorText dark:primaryColorText"
+            className="text-xl opacity-30 primaryColorText dark:text-[#ffffff40]"
             text={changingTag[currentTagIndex]}
         />
     )

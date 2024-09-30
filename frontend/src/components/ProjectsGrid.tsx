@@ -55,7 +55,6 @@ const Skeleton = () => (
   </div>
 );
 const items = [
-
   {
     title: "Storm (FE)",
     repo: "https://github.com/palveVaishnav/storm",
@@ -79,14 +78,6 @@ const items = [
     description: "Platform for crowd fundraising in case of medical emergencies.",
     header: <Skeleton />,
     icon: <IconHeartbeat className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "NoteHub",
-    repo: "https://github.com/palveVaishnav/notehub",
-    url: "https://note-hub-one.vercel.app/",
-    description: "Notes Sharing Platform for Students.",
-    header: <Skeleton />,
-    icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "DLost",

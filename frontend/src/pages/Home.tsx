@@ -9,7 +9,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 export default function Home() {
     return (
         <div className="grid w-full">
-            <div>
+            <div className="">
                 <Lander />
             </div>
         </div>
@@ -41,12 +41,12 @@ function Lander() {
             {/* Projects  */}
             <div className="grid place-content-center">
                 <div className="flex justify-between items-center p-4">
-                    <div className="text-lg primaryColorText font-serif md:text-xl lg:text-2xl">
+                    <div className="text-lg primaryColorText dark:text-white font-serif md:text-xl lg:text-2xl">
                         My Projects
                     </div>
                     <div className=" py-1 px-2 text-sm">
                         <Link to="/skills" >
-                            <Button >
+                            <Button className="dark:bg-[#00000040] text-white border border-[#00000050]">
                                 View Skills {">>"}
                             </Button>
                         </Link>
