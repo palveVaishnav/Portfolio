@@ -18,14 +18,10 @@ import { Link } from "react-router-dom";
 
 //pages
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import About from '../pages/About'
-import Contact from '../pages/Contact'
 import Home from "../pages/Home"
-import Ideas from '../pages/Ideas'
 import Layout from "../pages/Layout"
 import NoPage from '../pages/NoPage'
 import Projects from '../pages/Project'
-import Socials from '../pages/Socials'
 import Skills from "@/pages/Skills";
 import { pages } from "@/utils/pageList";
 
@@ -116,11 +112,6 @@ export function Routing() {
                         <Route index element={<Home />}></Route>
                         <Route path='home' element={<Home />}></Route>
                         <Route path='projects' element={<Projects />}></Route>
-                        <Route path='socials' element={<Socials />}></Route>
-                        <Route path='about' element={<About />}></Route>
-                        <Route path='contact' element={<Contact />}></Route>
-                        <Route path='services' element={<Services />}></Route>
-                        <Route path='ideas' element={<Ideas />}></Route>
                         <Route path='skills' element={<Skills />}></Route>
                         <Route path='*' element={<NoPage />}></Route>
                     </Route>
