@@ -9,9 +9,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 export default function Home() {
     return (
         <div className="grid w-full">
-            <div className="">
-                <Lander />
-            </div>
+            <Lander />
         </div>
     );
 }
