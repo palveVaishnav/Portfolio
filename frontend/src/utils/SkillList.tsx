@@ -32,15 +32,9 @@ interface Skill {
 
 export const skillList:Skill[] = [
     {
-        name: "HTML5",
-        des: "The backbone of web content structure.",
-        svg: <IconBrandHtml5 stroke={1} />,
-        type:["frontend","web"],
-    },
-    {
-        name: "CSS3",
-        des: "Styles that bring life and design to web pages.",
-        svg: <IconBrandCss3 stroke={1} />,
+        name: "Framer-Motion",
+        des: "Animation library by Framer.",
+        svg: <IconBrandTailwind stroke={1} />,
         type:["frontend","web"],
     },
     {
@@ -116,18 +110,6 @@ export const skillList:Skill[] = [
         type:["backend","database"],
     },
     {
-        name: "Shadcn/UI",
-        des: "A UI framework for building accessible web applications.",
-        svg: <IconBrandTabler stroke={1} />, // Tabler icon as a placeholder
-        type:["frontend","tools"],
-    },
-    {
-        name: "Magic UI",
-        des: "A modern UI library with a focus on flexibility.",
-        svg: <IconBrandTabler stroke={1} />, // Tabler icon as a placeholder
-        type:["frontend","tools"],
-    },
-    {
         name: "Docker",
         des: "Platform for automating the deployment of applications in containers.",
         svg: <IconBrandDocker stroke={1} />,
@@ -164,7 +146,7 @@ export const skillList:Skill[] = [
         type:["programming"],
     },
     {
-        name: "Github",
+        name: "Git & Github",
         des: "A Version Control Platform",
         svg: <IconBrandGithub stroke={1} />,
         type:["tools","devops"],

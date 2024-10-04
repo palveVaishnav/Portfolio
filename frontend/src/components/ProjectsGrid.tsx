@@ -56,18 +56,10 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "Storm (FE)",
+    title: "Storm",
     repo: "https://github.com/palveVaishnav/storm",
     url: "https://storm-seven.vercel.app/",
-    description: "Web animation using framer.",
-    header: <Skeleton />,
-    icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "NoteHub",
-    repo: "https://github.com/palveVaishnav/notehub",
-    url: "https://note-hub-one.vercel.app/",
-    description: "Notes Sharing Platform for Students.",
+    description: "Animated Landing page using framer.",
     header: <Skeleton />,
     icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
   },
@@ -80,12 +72,28 @@ const items = [
     icon: <IconHeartbeat className="h-4 w-4 text-neutral-500" />,
   },
   {
+    title: "NoteHub",
+    repo: "https://github.com/palveVaishnav/notehub",
+    url: "https://note-hub-one.vercel.app/",
+    description: "Notes Sharing Platform for Students.",
+    header: <Skeleton />,
+    icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
+  },
+  {
     title: "DLost",
     repo: "https://github.com/palveVaishnav/dlost",
     url: "https://dlost.vercel.app/",
     description: "A Route Sharing Platform",
     header: <Skeleton />,
     icon: <IconUserStar className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Boost",
+    repo: "https://github.com/palveVaishnav/100xboost",
+    url: "https://100xboost.vercel.app/",
+    description: "Landing page for super30 project.",
+    header: <Skeleton />,
+    icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "BView",

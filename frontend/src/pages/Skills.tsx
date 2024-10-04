@@ -12,6 +12,8 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export function SelectDemo() {
 
@@ -30,7 +32,12 @@ const DomainContext = createContext<string>("All");
 export default function Skills() {
     const [selectedDomain, setSelectedDomain] = useState("All"); // State to store the selected item    
     return (
-        <div className="m-4 grid place-content-center gap-4">
+        <div className="m-4 grid place-content-center gap-4 relative">
+            <Link to={"/"}>
+                <Button className="fixed top-2 left-2" >
+                    Go Back
+                </Button>
+            </Link>
             <Select onValueChange={(value) => setSelectedDomain(value)}>
                 <SelectTrigger className="w-[180px] shadow-lg border font-semibold">
                     <SelectValue placeholder="All" className="font-bold" />
