@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { TextChanger } from "@/components/AnimatedTyping";
 import { ModeToggle } from "@/components/mode-toggle";
+import GitHubCalendar from 'react-github-calendar';
 
 export default function Home() {
     return (
@@ -17,7 +18,7 @@ export default function Home() {
 
 function Lander() {
     return <>
-        <div className="grid relative">
+        <div className="grid relative mb-60">
             {/* Hero Area */}
             <div className="absolute top-1 right-1">
                 <ModeToggle />
@@ -39,6 +40,7 @@ function Lander() {
 
             <ComponentEnd />
 
+
             {/* Projects  */}
             <div className="grid place-content-center">
                 <div className="flex justify-between items-center p-4">
@@ -59,6 +61,14 @@ function Lander() {
                 </div>
             </div>
             <ComponentEnd />
+
+            <div className="place-content-center text-left gap-4 hidden md:grid">
+                <span className="font-semibold" >Github : </span>
+                <GitHubCalendar username="palvevaishnav" />
+            </div>
+
+            <ComponentEnd />
+
         </div>
     </>
 }
