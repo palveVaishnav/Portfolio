@@ -56,7 +56,15 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "Storm",
+    title: "Quizrr (Fullstack)",
+    repo: "https://github.com/palveVaishnav/newQuizrr",
+    url: "",
+    description: "A Platform to practice for major online Exams.",
+    header: <Skeleton />,
+    icon: <IconDeviceGamepad2 className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Storm (FE )",
     repo: "https://github.com/palveVaishnav/storm",
     url: "https://storm-seven.vercel.app/",
     description: "Animated Landing page using framer.",
@@ -64,7 +72,7 @@ const items = [
     icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "ArogyArpan",
+    title: "ArogyArpan (fullstack)",
     repo: "https://github.com/palveVaishnav/arogyarpan",
     url: "https://arogyarpan.vercel.app/",
     description: "Platform for crowd fundraising in case of medical emergencies.",
@@ -72,7 +80,7 @@ const items = [
     icon: <IconHeartbeat className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "NoteHub",
+    title: "NoteHub (FE) ",
     repo: "https://github.com/palveVaishnav/notehub",
     url: "https://note-hub-one.vercel.app/",
     description: "Notes Sharing Platform for Students.",
@@ -80,7 +88,7 @@ const items = [
     icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "DLost",
+    title: "DLost (FE )",
     repo: "https://github.com/palveVaishnav/dlost",
     url: "https://dlost.vercel.app/",
     description: "A Route Sharing Platform",
@@ -88,12 +96,20 @@ const items = [
     icon: <IconUserStar className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Boost",
+    title: "Boost (FE )",
     repo: "https://github.com/palveVaishnav/100xboost",
     url: "https://100xboost.vercel.app/",
     description: "Landing page for super30 project.",
     header: <Skeleton />,
     icon: <IconFiles className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Roomer (Fullstack)",
+    repo: "https://github.com/palveVaishnav/roomer",
+    url: "",
+    description: "A Web for searching flats and rooms (Rental)",
+    header: <Skeleton />,
+    icon: <IconHome className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "BView",
@@ -104,7 +120,7 @@ const items = [
     icon: <IconUserStar className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Varhad",
+    title: "Varhad (FE)",
     repo: "https://github.com/palveVaishnav/varhad",
     url: "https://varhad.vercel.app/",
     description: "A Website for a loacl company.",
@@ -112,15 +128,7 @@ const items = [
     icon: <IconDeviceGamepad2 className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Roomer",
-    repo: "https://github.com/palveVaishnav/roomer",
-    url: "",
-    description: "A Web for searching flats and rooms (Rental)",
-    header: <Skeleton />,
-    icon: <IconHome className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "Sudoku",
+    title: "Sudoku (game ) ",
     repo: "https://github.com/palveVaishnav/sudoku",
     url: "https://sudoku-ten-alpha.vercel.app/",
     description: "A simple Sudoku game.",

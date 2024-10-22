@@ -32,16 +32,18 @@ const DomainContext = createContext<string>("All");
 export default function Skills() {
     const [selectedDomain, setSelectedDomain] = useState("All"); // State to store the selected item    
     return (
-        <div className="m-4 grid place-content-center gap-4 relative">
-            <Link to={"/"}>
-                <Button className="fixed top-2 left-2" >
-                    Go Back
-                </Button>
-            </Link>
+        <div className="m-4 grid place-content-center gap-4 relative h-screen">
             <Select onValueChange={(value) => setSelectedDomain(value)}>
-                <SelectTrigger className="w-[180px] shadow-lg border font-semibold">
-                    <SelectValue placeholder="All" className="font-bold" />
-                </SelectTrigger>
+                <div className="flex justify-between">
+                    <SelectTrigger className="w-[180px] shadow-lg border font-semibold">
+                        <SelectValue placeholder="All" className="font-bold" />
+                    </SelectTrigger>
+                    <Link to={"/"}>
+                        <Button className="bg-inherit border text-black dark:text-white hover:text-white dark:hover:text-black" >
+                            Go Back
+                        </Button>
+                    </Link>
+                </div>
                 <SelectContent>
                     <SelectGroup>
                         <SelectLabel>Select Domain</SelectLabel>

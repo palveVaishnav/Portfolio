@@ -14,6 +14,7 @@ import {
     IconDatabase as IconBrandPostgresql,
     IconBrandPrisma,
     IconBrandGithub,
+    IconBrandGolang,
 } from "@tabler/icons-react";
 
 import { ReactElement } from 'react';
@@ -64,22 +65,22 @@ export const skillList: Skill[] = [
         type: ["backend", "web"],
     },
     {
+        name: "Fiber",
+        des: "Framework for building web applications using Go",
+        svg: <IconBrandGolang stroke={1} />, // Express doesn't have a direct icon, using Node.js instead
+        type: ["backend", "web"],
+    },
+    {
         name: "Node",
         des: "JavaScript runtime for server-side programming.",
         svg: <IconBrandNodejs stroke={1} />,
-        type: ["backend", "web", "programming"],
+        type: ["backend", "web"],
     },
     {
         name: "MongoDB",
         des: "NoSQL database for flexible, document-oriented data storage.",
         svg: <IconDatabase stroke={1} />,
         type: ["database"],
-    },
-    {
-        name: "Mongoose",
-        des: "NoSQL database for flexible, document-oriented data storage.",
-        svg: <IconDatabase stroke={1} />,
-        type: ["backend"],
     },
     {
         name: "Next",
@@ -134,6 +135,12 @@ export const skillList: Skill[] = [
         des: "Powerful system programming language with wide hardware support.",
         svg: <IconBrandC stroke={1} />,
         type: ["programming"],
+    },
+    {
+        name: "Go",
+        des: "Powerful programming language.",
+        svg: <IconBrandGolang stroke={1} />,
+        type: ["programming", "web"],
     },
     {
         name: "Java",
