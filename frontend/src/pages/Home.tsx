@@ -34,7 +34,7 @@ function Lander() {
                     <SocialBar />
                 </div>
             </div>
-            <Link target="_blank" to={'https://drive.google.com/file/d/1AfmpXO8SPj8yjlzoLkkiurcqVPgriU4q/view?usp=sharing'} className="border rounded-md w-fit justify-self-center mt-10 hover:bg-primary hover:text-white dark:hover:text-black py-2 px-4">
+            <Link target="_blank" to={'https://drive.google.com/file/d/1iaG7Z_c2vHZxw-J3--PbG6bf2JTPVcs1/view?usp=sharing'} className="border rounded-md w-fit justify-self-center mt-10 hover:bg-primary hover:text-white dark:hover:text-black py-2 px-4">
                 Resume
             </Link>
 
