@@ -55,6 +55,15 @@ const Skeleton = () => (
   </div>
 );
 const items = [
+  
+  {
+    title: "SolvePYQ (Fullstack)",
+    repo: "https://github.com/palveVaishnav/solvepyq",
+    url: "https://www.solvepyq.com/",
+    description: "In-progress, Third itteration of Quizrr. Making it productiion worthy !",
+    header: <Skeleton />,
+    icon: <IconDeviceGamepad2 className="h-4 w-4 text-neutral-500" />,
+  },
   {
     title: "Quizrr (Fullstack)",
     repo: "https://github.com/palveVaishnav/newQuizrr",
